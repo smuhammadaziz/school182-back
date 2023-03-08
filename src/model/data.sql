@@ -1,0 +1,1 @@
+insert into admins(username, hash) values ('admin', 'hello123');
