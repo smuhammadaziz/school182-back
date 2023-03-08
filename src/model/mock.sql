@@ -6,8 +6,10 @@ create table admins(
      hash text not null
 );
 
-SELECT uuid_generate_v4();
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";  -- uuid ni install qilish
 
+
+-- uuid default uuid_generate_v4() - ishlatish
 
 create table news(
      id uuid default uuid_generate_v4(),
@@ -15,4 +17,3 @@ create table news(
      news_text text not null,
      date date default current_date
 ); 
-
