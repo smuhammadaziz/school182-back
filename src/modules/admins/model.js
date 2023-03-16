@@ -1,6 +1,6 @@
 const { fetch, fetchAll } = require('../../lib/postgres');
 
-const ADMINS = `select * from admins;`;
+const ADMINS = `select * from administrations;`;
 
 const admins = () => fetchAll(ADMINS);
 
