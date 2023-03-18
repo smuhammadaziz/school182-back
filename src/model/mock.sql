@@ -18,3 +18,12 @@ create table administrations(
      malumoti text not null,
      talim text not null
 );
+
+create table news(
+     id uuid default uuid_generate_v4(),
+     heading text not null,
+     description text not null,
+     image1 text not null,
+     image2 text not null,
+     image3 text not null
+);
