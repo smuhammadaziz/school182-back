@@ -16,7 +16,8 @@ create table administrations(
      millat text not null,
      partiyaviyligi text not null,
      malumoti text not null,
-     talim text not null
+     talim text not null,
+     photo text not null
 );
 
 create table news(
@@ -27,3 +28,4 @@ create table news(
      image2 text not null,
      image3 text not null
 );
+
