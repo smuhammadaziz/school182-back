@@ -6,3 +6,7 @@ insert into news (heading, text, img1, img2) values ('Otcom', 'hello world, that
 insert into news (heading, text, img1, img2) values ('Konklab', 'hello world, that''s a beautiful day', 'http://dummyimage.com/350x250.png/ff4444/ffffff', 'http://dummyimage.com/350x250.png/cc0000/ffffff');
 insert into news (heading, text, img1, img2) values ('Ronstring', 'hello world, that''s a beautiful day', 'http://dummyimage.com/350x250.png/cc0000/ffffff', 'http://dummyimage.com/350x250.png/5fa2dd/ffffff');
 insert into news (heading, text, img1, img2) values ('Holdlamis', 'hello world, that''s a beautiful day', 'http://dummyimage.com/350x250.png/5fa2dd/ffffff', 'http://dummyimage.com/350x250.png/cc0000/ffffff');
+
+
+
+
