@@ -7,7 +7,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";  -- uuid ni install qilish
 
 -- uuid default uuid_generate_v4() - ishlatish
 
-create table administrations(
+create table admins(
      id uuid default uuid_generate_v4(),
      fullName varchar(100) not null,
      lavozim text not null,
@@ -23,9 +23,8 @@ create table administrations(
 create table news(
      id uuid default uuid_generate_v4(),
      heading text not null,
-     description text not null,
-     image1 text not null,
-     image2 text not null,
-     image3 text not null
+     text text not null,
+     img1 text not null,
+     img2 text not null
 );
 
