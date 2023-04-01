@@ -3,8 +3,6 @@ const axios = require('axios');
 
 const { Telegraf } = require('telegraf');
 
-// const BOT_TOKEN = '6036246640:AAE5KRNZz5oQ_X2wHdKMmcYFwR6GPz24-uk';
-
 const bot = new Telegraf(
   process.env.BOT_TOKEN || '6036246640:AAE5KRNZz5oQ_X2wHdKMmcYFwR6GPz24-uk'
 );
