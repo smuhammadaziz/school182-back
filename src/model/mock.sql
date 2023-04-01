@@ -28,3 +28,12 @@ create table news(
      img2 text not null
 );
 
+
+create table contact(
+     id uuid default uuid_generate_v4(),
+     fullName text not null,
+     phone text not null,
+     email text not null,
+     comment text not null,
+     time date default current_date
+);
