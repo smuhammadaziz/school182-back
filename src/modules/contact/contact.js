@@ -17,6 +17,7 @@ module.exports = {
       res.send(allData);
     } catch (err) {
       console.log('get all contact form data ERROR', err);
+      res.status(500).send('Server error');
     }
   },
   CREATE_FORM: async (req, res) => {
