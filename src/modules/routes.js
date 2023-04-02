@@ -14,6 +14,7 @@ router
   .get('/api/client/news/:id', NEWS.GET_ONE)
   .get('/api/client/contact', CONTACT.GET_ALL)
   .post('/api/client/contact/create', CONTACT.CREATE_FORM)
-  .get('/api/client/teachers', TEACHERS.GET_ALL);
+  .get('/api/client/teachers', TEACHERS.GET_ALL)
+  .post('/api/client/teachers/create', TEACHERS.CREATE);
 
 module.exports = router;
