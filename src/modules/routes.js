@@ -12,6 +12,7 @@ router
   .get('/api/client/admins/:id', ADMINS.GET_ONE_ADMIN)
   .get('/api/client/news', NEWS.GET_ALL_NEWS)
   .get('/api/client/news/:id', NEWS.GET_ONE)
+  .post('/api/client/news/create', NEWS.CREATE_NEWS)
   .get('/api/client/contact', CONTACT.GET_ALL)
   .post('/api/client/contact/create', CONTACT.CREATE_FORM)
   .get('/api/client/teachers', TEACHERS.GET_ALL)

@@ -1,4 +1,4 @@
-const { all_news, get_one } = require('./model');
+const { all_news, get_one, createNews } = require('./model');
 
 module.exports = {
   GET_ALL_NEWS: async (req, res) => {
@@ -18,6 +18,19 @@ module.exports = {
       res.send(getOne ? getOne : []);
     } catch (err) {
       console.log('GET ONE NEWS: ERROR', err);
+    }
+  },
+  CREATE_NEWS: async (req, res) => {
+    try {
+      const { heading, text, img1, img2 } = req.body;
+
+      const newNews = await createNews(heading, text, img1, img2);
+      console.log(newNews);
+
+      res.send(newNews);
+    } catch (err) {
+      console.log('creating new news error', err);
+      res.status(500).send({ error: 'Failed to create news' });
     }
   },
 };
