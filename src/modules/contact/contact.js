@@ -1,5 +1,5 @@
 const { getAll, createForm } = require('./model');
-const axios = require('axios');
+const moment = require('moment');
 
 const { Telegraf } = require('telegraf');
 
@@ -25,14 +25,14 @@ module.exports = {
 
       const newForm = await createForm(fullName, phone, email, comment);
 
-      console.log(newForm.email);
+      let formattedTime = moment(newForm.time).format('YYYY-MM-DD');
 
-      let text = 'Sizga yangi xabar keldi: \n';
+      let text = 'Sizga yangi xabar keldi: \n\n';
       let fName = 'Ism-Familiyasi: ' + newForm.fullname + '\n';
       let phoneNumber = 'Telefon raqami: ' + newForm.phone + '\n';
       let emailAdd = 'Email addressi: ' + newForm.email + '\n';
       let userComment = 'Izohi: ' + newForm.comment + '\n';
-      let writedTime = 'Yozilgan vaqti: ' + newForm.time + '\n';
+      let writedTime = 'Yozilgan vaqti: ' + formattedTime + '\n';
 
       let result = text + fName + phoneNumber + emailAdd + userComment + writedTime;
 
