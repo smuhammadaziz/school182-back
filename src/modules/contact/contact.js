@@ -8,6 +8,7 @@ const bot = new Telegraf(
 );
 
 const chat_id = '998523755';
+const chat_id2 = '5002318671';
 
 bot.launch();
 module.exports = {
