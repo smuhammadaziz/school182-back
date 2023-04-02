@@ -17,7 +17,7 @@ module.exports = {
 
       const getOneAdmin = await oneAdmin(id);
 
-      res.send(getOneAdmin);
+      res.send(getOneAdmin ? getOneAdmin : []);
     } catch (err) {
       console.log('GET one admin error:', err);
     }

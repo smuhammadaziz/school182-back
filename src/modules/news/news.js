@@ -12,8 +12,9 @@ module.exports = {
   GET_ONE: async (req, res) => {
     try {
       const { id } = req.params;
-      // console.log(id);
+
       const getOne = await get_one(id);
+
       res.send(getOne ? getOne : []);
     } catch (err) {
       console.log('GET ONE NEWS: ERROR', err);
