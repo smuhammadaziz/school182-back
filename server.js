@@ -2,19 +2,19 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 4444;
-const bodyParser = require('body-parser');
-const path = require('path');
+// const bodyParser = require('body-parser');
+// const path = require('path');
 
 const router = require('./src/modules/routes');
 
-const multer = require('multer');
+// const multer = require('multer');
 
 app.use(cors());
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 
-require('dotenv').config();
+// require('dotenv').config();
 
 app.use(router);
 
