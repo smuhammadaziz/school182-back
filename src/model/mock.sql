@@ -25,7 +25,8 @@ create table news(
      heading text not null,
      text text not null,
      img1 text not null,
-     img2 text not null
+     img2 text not null,
+     time date default current_date
 );
 
 
@@ -37,3 +38,9 @@ create table contact(
      comment text not null,
      time date default current_date
 );
+
+-- create table students(
+--      id uuid default uuid_generate_v4(),
+--      fullName text not null,
+
+-- );
